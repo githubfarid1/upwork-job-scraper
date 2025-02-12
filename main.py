@@ -15,7 +15,7 @@ load_dotenv()
 # breakpoint()
 # create an instance of the logger
 try:
-    logging.basicConfig(filename='/home/pi/dev/python/upwork-job-bot/bot.log', level=logging.INFO,
+    logging.basicConfig(filename='/home/pi/dev/python/upwork-job-scraper/bot.log', level=logging.INFO,
                     format='%(asctime)-15s %(levelname)-2s %(message)s')
 except:
     logging.basicConfig(filename='bot.log', level=logging.INFO,
