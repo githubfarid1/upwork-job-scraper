@@ -60,8 +60,8 @@ def find_job(html):
 
 async def run(playwright):
     
-    page = await playwright.new_page(proxy={"server": "http://43.152.113.55:2334","username": "u0a8c217b562505b8-zone-custom-region-us","password": "u0a8c217b562505b8"})
-
+    # page = await playwright.new_page(proxy={"server": "http://43.152.113.55:2334","username": "u0a8c217b562505b8-zone-custom-region-us","password": "u0a8c217b562505b8"})
+    page = await playwright.new_page()
     isfirst = True
     while True:
         idtime = random.choice(range(120, 180))
@@ -109,9 +109,9 @@ async def run(playwright):
     # await browser.close()
 
 async def main():
-    message = "Starting bot..."
-    send_telegram(message=message)
-    logger.info(message)
+    # message = "Starting bot..."
+    # send_telegram(message=message)
+    # logger.info(message)
     while True:
         try:
             async with AsyncCamoufox(headless=HEADLESS) as playwright:
