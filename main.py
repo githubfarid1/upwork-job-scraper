@@ -109,9 +109,9 @@ async def run(playwright):
     # await browser.close()
 
 async def main():
-    # message = "Starting bot..."
-    # send_telegram(message=message)
-    # logger.info(message)
+    message = "Starting bot..."
+    send_telegram(message=message)
+    logger.info(message)
     while True:
         try:
             async with AsyncCamoufox(headless=HEADLESS) as playwright:
